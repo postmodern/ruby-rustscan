@@ -32,7 +32,7 @@ Rustscan::Command.run(addresses: ['127.0.0.1'], ports: [80, 443])
 
 * [ruby] >= 2.0.0
 * [rustscan] >= 2.0.0
-* [command_mapper] ~> 0.2
+* [command_mapper] ~> 0.2, >= 0.2.1
 
 [ruby]: https://www.ruby-lang.org/
 [command_mapper]: https://github.com/postmodern/command_mapper.rb#readme

@@ -21,7 +21,7 @@ required_ruby_version: ">= 2.0.0"
 requirements: rustscan >= 2.0.0
 
 dependencies:
-  command_mapper: ~> 0.2
+  command_mapper: ~> 0.2, >= 0.2.1
 
 development_dependencies:
   bundler: ~> 2.0
