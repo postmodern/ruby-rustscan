@@ -61,4 +61,4 @@ Copyright (c) 2022 Hal Brodigan
 
 See {file:LICENSE.txt} for license information.
 
-[rustscan]: https://github.com/OJ/rustscan#readme
+[rustscan]: https://github.com/RustScan/RustScan#readme
