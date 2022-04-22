@@ -105,7 +105,7 @@ describe Rustscan::Command do
       it "must only accept :serial or :random" do
         expect {
           subject.command_argv
-        }.to raise_error(CommandMapper::ValidationError,"option scan_order was given an invalid value (#{scan_order.inspect}): unknown value (#{scan_order.inspect})")
+        }.to raise_error(CommandMapper::ValidationError,"option scan_order was given an invalid value (#{scan_order.inspect}): unknown value (#{scan_order.inspect}) must be :serial, :random, or \"serial\", \"random\"")
       end
     end
   end
@@ -155,7 +155,7 @@ describe Rustscan::Command do
       it "must only accept :none, :default, or :random" do
         expect {
           subject.command_argv
-        }.to raise_error(CommandMapper::ValidationError,"option scripts was given an invalid value (#{scripts.inspect}): unknown value (#{scripts.inspect})")
+        }.to raise_error(CommandMapper::ValidationError,"option scripts was given an invalid value (#{scripts.inspect}): unknown value (#{scripts.inspect}) must be :none, :default, :custom, or \"none\", \"default\", \"custom\"")
       end
     end
   end
