@@ -10,7 +10,7 @@ module Rustscan
       option '--no-config'
       option '--top'
       option '--version'
-      option '--addresses', value: true, repeats: true
+      option '--addresses', value: {type: List.new}
       option '--batch-size', value: {type: Num.new}
       option '--ports', value: {type: List.new(type: Num.new)}
       option '--scan-order', value: {type: Enum[:serial, :random]}
@@ -19,7 +19,7 @@ module Rustscan
       option '--tries', value: {type: Num.new}
       option '--ulimit', value: {type: Num.new}
 
-      argument :command, repeats: true
+      argument :command, repeats: true, required: false
     end
 
   end
